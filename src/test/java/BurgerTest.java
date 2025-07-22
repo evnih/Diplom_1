@@ -41,7 +41,7 @@ public class BurgerTest {
     public void tearDown() throws Exception {
         mockitoCloseable.close();
     }
-    @Parameterized.Parameters
+    @Parameterized.Parameters(name = "Bun={0}, Ing1={1}, Ing2={2} => Expected={3}")
     public static Collection<Object[]> data() {
         return Arrays.asList(new Object[] [] {
                 {100f, 50f, 30f, 280f},
